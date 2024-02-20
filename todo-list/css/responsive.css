@@ -1,0 +1,9 @@
+@media (min-width: 1200px) { 
+  .full-page {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .item-list .bin {
+    top: 0px;
+  }
+}

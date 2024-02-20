@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envie seu email</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div data-js="out-popup" class="out-popup">
+  <div class="popup-content bg-white p-8 rounded-md shadow-md max-w-screen-sm mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">Nova Tarefa</h2>
+      <!-- Inputs do Popup -->
+      <div class="mb-4">
+        <label for="taskName" class="block text-gray-700">Nome da Tarefa:</label>
+        <input type="text" id="taskName" class="border p-2 w-full">
+      </div>
+      <div class="mb-4">
+        <label for="taskContent" class="block text-gray-700">Conteúdo da Tarefa:</label>
+        <textarea type="text" id="taskContent" class="border p-2 w-full"></textarea>
+      </div>
+      <div class="mb-4">
+        <label for="taskStatus" class="block text-gray-700">Status:</label>
+        <select id="taskStatus" class="border p-2 w-full">
+          <option value="pendente">Pendente</option>
+          <option value="em-andamento">Em Andamento</option>
+          <option value="concluido">Concluído</option>
+        </select>
+      </div>
+  
+      <!-- Botão de Adicionar Tarefa -->
+      <div class="flex items-center mb-4">
+        <button class="bg-gray-800 text-white p-2 rounded-md hover:bg-gray-600 mx-auto w-full">
+          Adicionar Tarefa
+        </button>
+      </div> 
+  </div>
+</div>
+  
+  <!-- <script type=text/js" src="../js/popup-form/script-popup-form-email.js"></script>
+  <script type=text/js" src="../js/main.js"></script> -->
+
+</body>
+</html>
