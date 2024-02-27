@@ -1,9 +1,8 @@
-/*
-- Precisa ajustar a ação no erro da fecthForGetKey
-*/
+const baseURL = 'https://api-weather-app-omega.vercel.app'
+// const baseURLLocal = 'http://localhost:3000'
 
 const fecthForGetKey = async () => {
-  const [ error, result ] = await to(fetch('http://localhost:3000/key'))
+  const [ error, result ] = await to(fetch(`${baseURL}/key`))
 
   if (error) return log(error.message)
 
