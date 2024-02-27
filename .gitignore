@@ -3,5 +3,5 @@
 send-emails/
 investimentos/
 
-weather-app/backend/node_modules/
-weather-app/backend/.env
+weather-app_API/node_modules/
+weather-app_API/.env
