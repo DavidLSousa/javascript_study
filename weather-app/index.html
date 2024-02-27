@@ -8,53 +8,35 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./css/styles.css">
 
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script defer src="./js/weather-resquest.js"></script>
+  <!-- <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <script defer src="js/utility-scripts.js"></script>
+  <script defer src="js/weather-request.js"></script>
   <script defer src="./js/main.js"></script>
-  <script defer src="./js/script-popup.js"></script>
 
   <title>Weather App</title>
 </head>
 <body class="bg-gray-100">
 
   <header class="bg-gray-700 text-white">
-    <div class="p-4 flex justify-between items-center max-w-screen-xl mx-auto">
+    <div class="p-4 max-w-screen-xl mx-auto">
+      <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+        
+        <h1 class="text-2xl font-semibold mb-2 sm:mb-0">Weather App</h1>
+        
+        <form data-js="form-weather" action="GET" class="flex items-center sm:w-1/2 md:w-1/3 w-full">
+          <input class="text-black flex-1 border rounded-md p-1.5 mr-2" type="text" name="input" placeholder="New place">
+          <button data-js="add-place" class="bg-gray-800 text-white p-2 rounded-md hover:bg-gray-600 flex justify-center items-center">
+            <i class="material-icons">add</i>
+          </button>
+        </form>
 
-      <h1 class="text-2xl font-semibold">Weather App</h1>
-
-      <a href="./pages/popup.html">
-        <button data-js="add-place" class="bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-600 flex justify-center items-center">
-          Add place
-        </button>
-      </a>
-
+      </div>
     </div>
   </header>
 
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 max-w-screen-xl mx-auto">
-    <!-- Div 1 -->
-    <div class="relative max-w-md w-full p-4 mx-auto bg-white shadow-md rounded-md mb-4">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-2xl font-semibold">Place</h2>
-        <button class="p-2 text-gray-600 hover:text-red-500">
-          <i class="material-icons">close</i>
-        </button>
-      </div>
-      <div class="flex items-center mb-4">
-        <input type="text" class="flex-1 border p-2 mr-2" placeholder="Nova tarefa" id="taskInput">
-        <button class="bg-gray-800 text-white p-2 rounded-md hover:bg-gray-600 flex justify-center items-center">
-          <i class="material-icons">add</i>
-        </button>
-      </div>
-      <ul class="list-none">
-        <!-- The task list will be dynamically populated here -->
-      </ul>
-    </div>
-
-    <!-- Repita o mesmo padrão para as outras divs -->
+  <section data-js="gridPlaces" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 max-w-screen-xl mx-auto">
+    
   </section>
-
-  <div data-js="popup" class="popup-container hidden"></div>
 
 </body>
 </html>

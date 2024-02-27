@@ -1,6 +1,7 @@
 .vscode
+
 send-emails/
-weather-app/js/weather-requests.js
-weather-app/node_modules/
 investimentos/
-NODE/
+
+weather-app/backend/node_modules/
+weather-app/backend/.env

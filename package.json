@@ -1,0 +1,12 @@
+{
+  "name": "javascript_study",
+  "version": "1.0.0",
+  "description": "Projeto simples, mas com a intenção que seja completo e usual para o dia a dia;\r Seu calculo é feito utilizando a função eval do JS e é feito uma lista, com o histórico dos ultimos calculos feitos;\r Foi tomadas as precauções para que não fosse possivel fazer uma entrada com comandos de JS pelo input para serem executados pela função eval;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
