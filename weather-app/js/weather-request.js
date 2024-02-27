@@ -4,7 +4,7 @@ const baseURL = 'https://api-weather-app-omega.vercel.app'
 const fecthForGetKey = async () => {
   const [ error, result ] = await to(fetch(`${baseURL}/key`))
 
-  if (error) return log(error.message)
+  if (error) return console.log(error.message)
 
   const { apikey } = await result.json()
   return apikey
